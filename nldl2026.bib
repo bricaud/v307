@@ -180,7 +180,7 @@ pages={201--210}
 }
 
 @inproceedings{kasbohrer26,
-title={Assessing Explanation Fragility of {SHAP} using Counterfactuals},
+title={Assessing the Fragility of SHAP-Based Model Explanations Using Counterfactuals},
 author={K{\"a}sbohrer, Cornelia C. and Mair, Sebastian and Jiang, Lili},
 openreview={44vMSJUmTi},
 abstract={Post-hoc explanations such as SHAP are increasingly used to justify machine learning predictions. Yet, these explanations can be fragile: small, realistic input perturbations can cause large shifts in the importance of attributed features. We present a multi-seed, distance-controlled *stability assessment* for SHAP-based model explanations. For each data instance, we use DiCE to generate plausible counterfactuals, pool across random seeds, deduplicate, and retain the $K$ nearest counterfactuals. Using a shared independent masker and the model s logit (raw margin), we measure per-feature attribution shifts and summarise instance-level instability. On four tabular fairness benchmark datasets, we apply our protocol to a logistic regression, a multilayer perceptron, and decision trees, including boosted and bagged versions. We report within-model group-wise explanation stability and examine which features most often drive the observed shifts. To contextualise our findings, we additionally report coverage, effective-$K$, distance-to-boundary, and outlier diagnostics. The protocol is model-agnostic yet practical for deep networks (batched inference, shared background), turning explanation variability into an actionable fairness assessment without altering trained models.},
